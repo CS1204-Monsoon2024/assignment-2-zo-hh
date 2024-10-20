@@ -136,26 +136,3 @@ public:
     }
 };
 
-int main() {
-    int initialSize = 7; 
-    HashTable ht(initialSize); 
-
-
-    ht.insert(1);
-    ht.printTable(); 
-    ht.insert(6);
-    ht.printTable(); 
-    ht.insert(15);
-    ht.printTable(); 
-    ht.insert(25);
-    ht.printTable(); 
-    ht.remove(15);
-    ht.printTable();
-    ht.insert(29);  
-    ht.printTable(); 
-
-    int find = ht.search(29); 
-    std::cout << "Search successful! Found @: " << find << std::endl; 
-
-    return 0;
-}
